@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;800&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: "Roboto Slab", serif;
+}
+
+header {
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+  font-size: 5rem;
+  color: #fff;
+  height: 100vh;
+  background: url("./assest/low-poly-grid-haikei.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-shadow: 2px 6px 6px #000;
+}
+
+header p {
+  z-index: 2;
+}
+
+.blob-stuff {
+  position: absolute;
+  z-index: 1;
+}
+
+.center {
+  display: grid;
+  place-items: center;
+  max-width: 1200px;
+}
+
+.first {
+  margin: 6rem auto 0 auto;
+  padding: 1em 2em;
+}
+
+.second {
+  margin: -15% auto 0 auto;
+}
+
+.center h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.center p {
+  font-size: 1.6rem;
+}
+
+.wave {
+  aspect-ratio: 960/300;
+  background: url("./assest/layered-waves.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.layered-peaks {
+  aspect-ratio: 900/300;
+  background: url("./assest/layered-peaks-haikei.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: -10%;
+}
+
+.layered-waves {
+  aspect-ratio: 900/300;
+  background: url("./assest/wave-1.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.waves-2 {
+  aspect-ratio: 900/360;
+  background: url("./assest/waves-2.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: -13%;
+}

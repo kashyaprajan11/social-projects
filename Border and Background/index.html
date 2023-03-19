@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Backgrounds & Borders</title>
+    <link rel="stylesheet" defer href="./style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/kute.js@2.2.4/dist/kute.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <p>Border & Background</p>
+      <div class="blob-stuff">
+        <svg
+          id="visual"
+          viewBox="0 0 900 360"
+          width="900"
+          height="360"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          version="1.1"
+        >
+          <g transform="translate(421.9678272376573 180.0567485626265)">
+            <path
+              id="blob1"
+              d="M72.4 -66.3C102.4 -42.4 141.2 -21.2 150.1 8.8C158.9 38.9 137.8 77.8 107.8 98.9C77.8 120.1 38.9 123.6 8.4 115.2C-22.2 106.8 -44.3 86.6 -62.1 65.5C-80 44.3 -93.5 22.2 -95.7 -2.2C-98 -26.6 -88.9 -53.3 -71.1 -77.1C-53.3 -100.9 -26.6 -122 -2.7 -119.3C21.2 -116.5 42.4 -90.1 72.4 -66.3"
+              fill="#271c36"
+            ></path>
+          </g>
+          <g transform="translate(454.5710737673861 171.7172240350311)">
+            <path
+              id="blob2"
+              style="visibility: hidden"
+              d="M110.4 -99.9C135.9 -84.9 144.4 -42.4 135 -9.4C125.6 23.6 98.1 47.1 72.6 70.6C47.1 94.1 23.6 117.6 -4.9 122.5C-33.5 127.5 -66.9 113.9 -96.1 90.4C-125.3 66.9 -150.1 33.5 -147.7 2.5C-145.2 -28.5 -115.4 -57 -86.2 -72C-57 -87 -28.5 -88.5 7 -95.5C42.4 -102.4 84.9 -114.9 110.4 -99.9"
+              fill="#271c36"
+            ></path>
+          </g>
+        </svg>
+      </div>
+    </header>
+
+    <section class="center first">
+      <h1>Section 1</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit a
+        similique unde, rerum est minus voluptatibus alias impedit debitis
+        autem, pariatur, nobis perferendis voluptas praesentium dolorum
+        aspernatur accusantium amet optio possimus tempore deserunt perspiciatis
+        officiis atque sapiente. Amet, fuga odio.
+      </p>
+    </section>
+    <div class="layered-peaks"></div>
+    <div class="layered-waves"></div>
+    <section class="center second">
+      <h1>Section 2</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit a
+        similique unde, rerum est minus voluptatibus alias impedit debitis
+        autem, pariatur, nobis perferendis voluptas praesentium dolorum
+        aspernatur accusantium amet optio possimus tempore deserunt perspiciatis
+        officiis atque sapiente. Amet, fuga odio.
+      </p>
+    </section>
+    <div class="waves-2"></div>
+
+    <script>
+      var tween = KUTE.fromTo(
+        "#blob1",
+        { path: "#blob1" },
+        { path: "#blob2" },
+        { repeat: 999, duration: 3000, yoyo: true }
+      ).start();
+    </script>
+  </body>
+</html>
